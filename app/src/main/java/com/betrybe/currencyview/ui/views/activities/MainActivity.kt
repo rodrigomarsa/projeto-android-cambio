@@ -73,8 +73,8 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        mLoadCurrency.visibility = View.VISIBLE
         mMenuSelection.visibility = View.VISIBLE
+        mLoadCurrency.visibility = View.VISIBLE
 
         CoroutineScope(Dispatchers.IO).launch {
             try {
